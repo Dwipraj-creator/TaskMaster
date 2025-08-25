@@ -12,7 +12,6 @@ import Dashboard from "./pages/Dashboard";
 
 function App(){
   return(
-    <BrowserRouter>
     <Router>
       <Routes>
         <Route path="/login"element={<Login/>}/>
@@ -35,7 +34,6 @@ function App(){
           />
       </Routes>
     </Router>
-    </BrowserRouter>
   )
 }
 
