@@ -1,4 +1,4 @@
-import { BrowserRouter as Router,Routes,Route } from "react-router-dom";  
+import { BrowserRouter as Router,Routes,Route, BrowserRouter } from "react-router-dom";  
 import Login from "./pages/Login";
 import Register from "./pages/Signup";
 import PrivateRoute from "./utils/PrivateRoute";
@@ -12,6 +12,7 @@ import Dashboard from "./pages/Dashboard";
 
 function App(){
   return(
+    <BrowserRouter>
     <Router>
       <Routes>
         <Route path="/login"element={<Login/>}/>
@@ -34,6 +35,7 @@ function App(){
           />
       </Routes>
     </Router>
+    </BrowserRouter>
   )
 }
 
