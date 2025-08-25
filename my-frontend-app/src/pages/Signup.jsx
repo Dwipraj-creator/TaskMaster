@@ -49,6 +49,9 @@ export default function Register() {
         <button className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600">
           Register
         </button>
+       <p>
+  Already have an account? <a href="/login" className="text-blue-500 underline">Login</a>
+</p>
       </form>
     </div>
   );
